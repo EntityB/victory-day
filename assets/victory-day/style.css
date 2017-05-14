@@ -5,20 +5,43 @@ body {
 }
 
 section {
-    min-height: 1080px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
 }
 
+section.home-section {
+    min-height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .home-section {
-    background: url(/assets/victory-day/img/background-astana.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background:  linear-gradient(to right, rgba(80, 80, 80, 0.38), rgba(80, 80, 80, 0.38)), url(/assets/victory-day/img/background-astana.jpg);
+    background-repeat: initial, no-repeat, ;
+    background-size: initial, 100%;
     background-position: center;
     background-attachment: fixed;
 }
 
+.media-section  {
+    background-color: #eee;
+}
+
+.geroi-section {
+    background-color: #5febfc
+}
+
 .masthead {
     background-color: #555;
+    z-index: 5;
 } 
+
+.contacts-section, .history-section {
+    background-color: #fff;
+}
 
 @media (min-width: 992px) {
     .masthead, .mastfoot, .cover-container {
