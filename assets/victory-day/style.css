@@ -1,0 +1,27 @@
+
+
+body {
+    background-color: #fff;
+}
+
+section {
+    min-height: 1080px;
+}
+
+.home-section {
+    background: url(/assets/victory-day/img/background-astana.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.masthead {
+    background-color: #555;
+} 
+
+@media (min-width: 992px) {
+    .masthead, .mastfoot, .cover-container {
+        width: 100%;
+    }
+}
