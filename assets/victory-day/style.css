@@ -2,6 +2,9 @@
 
 body {
     background-color: #fff;
+    color: #444;
+    text-align: left;
+    text-shadow: none;
 }
 
 section {
@@ -11,15 +14,18 @@ section {
 }
 
 section.home-section {
-    min-height: 1080px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 
 .home-section {
-    background:  linear-gradient(to right, rgba(80, 80, 80, 0.38), rgba(80, 80, 80, 0.38)), url(/assets/victory-day/img/background-astana.jpg);
+    background:  linear-gradient(to right, rgba(80, 80, 80, 0.38), rgba(80, 80, 80, 0.38)), url('./img/background-astana.jpg');
     background-repeat: initial, no-repeat, ;
     background-size: initial, 100%;
     background-position: center;
@@ -41,6 +47,10 @@ section.home-section {
 
 .contacts-section, .history-section {
     background-color: #fff;
+}
+
+.contacts-section {
+    padding-bottom: 50px;
 }
 
 @media (min-width: 992px) {
