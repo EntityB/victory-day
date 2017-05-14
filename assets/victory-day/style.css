@@ -53,6 +53,17 @@ section.home-section {
     padding-bottom: 50px;
 }
 
+
+.multipleslides {
+    position: relative;
+    min-height: 500px;
+}
+
+.multipleslides>div {
+    position: absolute;
+    width: 100%;
+}
+
 @media (min-width: 992px) {
     .masthead, .mastfoot, .cover-container {
         width: 100%;

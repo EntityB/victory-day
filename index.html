@@ -86,7 +86,48 @@
                 <section class="geroi-section">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 id="geroi" class="cover-heading">Герои</h1>
-                        <p></p>
+                        <div class="multipleslides">
+                            <div>
+                                <div class="col-md-6">
+                                    <a href="#" align=center><img src="assets/victory-day/slideshow/1s.jpg" width=600 height=450></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>text about event0</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col-md-6">
+                                    <a href="#"><img src="assets/victory-day/slideshow/2s.jpeg" width=600 height=450></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>text about event1</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col-md-6">
+                                    <a href="#"><img src="assets/victory-day/slideshow/3s.png" width=600 height=450></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>text about event2</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col-md-6">
+                                    <a href="#"><img src="assets/victory-day/slideshow/4s.jpeg" width=600 height=450></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>text about event3</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="col-md-6">
+                                    <a href="#"><img src="assets/victory-day/slideshow/5s.jpeg" width=600 height=450></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>text about event4</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -131,6 +172,20 @@
     <script src="assets/bootstrap/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/bootstrap/ie10-viewport-bug-workaround.js"></script>
+
+
+    <script>
+        $(function () {
+            $('.multipleslides').each(function () {
+                // scope everything for each slideshow
+                var $this = this;
+                $('> :gt(0)', $this).hide();
+                setInterval(function () {
+                    $('> :first-child', $this).fadeOut().next().fadeIn().end().appendTo($this);
+                }, 8000);
+            })
+        });
+    </script>
 </body>
 
 </html>
